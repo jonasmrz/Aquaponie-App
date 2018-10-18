@@ -1,0 +1,10 @@
+C:\Users\jonas\source\repos\Aquaponie App\Aquaponie App\bin\Debug\Aquaponie App.exe.config
+C:\Users\jonas\source\repos\Aquaponie App\Aquaponie App\bin\Debug\Aquaponie App.exe
+C:\Users\jonas\source\repos\Aquaponie App\Aquaponie App\bin\Debug\Aquaponie App.pdb
+C:\Users\jonas\source\repos\Aquaponie App\Aquaponie App\obj\Debug\Aquaponie App.csprojResolveAssemblyReference.cache
+C:\Users\jonas\source\repos\Aquaponie App\Aquaponie App\obj\Debug\Aquaponie_App.Properties.Resources.resources
+C:\Users\jonas\source\repos\Aquaponie App\Aquaponie App\obj\Debug\Aquaponie App.csproj.GenerateResource.cache
+C:\Users\jonas\source\repos\Aquaponie App\Aquaponie App\obj\Debug\Aquaponie App.csproj.CoreCompileInputs.cache
+C:\Users\jonas\source\repos\Aquaponie App\Aquaponie App\obj\Debug\Aquaponie App.exe
+C:\Users\jonas\source\repos\Aquaponie App\Aquaponie App\obj\Debug\Aquaponie App.pdb
+C:\Users\jonas\source\repos\Aquaponie App\Aquaponie App\obj\Debug\Aquaponie_App.Form1.resources
