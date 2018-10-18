@@ -28,15 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.transferCycle = new System.Windows.Forms.ComboBox();
+            this.debutCycle = new System.Windows.Forms.ComboBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.modifCycle = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.modifFrequence = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.freqTransfer = new System.Windows.Forms.TextBox();
@@ -63,13 +76,15 @@
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.modifNourriture = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -80,32 +95,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.modifCycle = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.debutCycle = new System.Windows.Forms.ComboBox();
-            this.transferCycle = new System.Windows.Forms.ComboBox();
-            this.modifFrequence = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.tabPage2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -138,18 +138,66 @@
             this.tabPage1.Text = "Graphiques";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(571, 319);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(116, 25);
+            this.label19.TabIndex = 6;
+            this.label19.Text = "Luminosité";
+            this.label19.Click += new System.EventHandler(this.label19_Click);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(566, 24);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(138, 25);
+            this.label17.TabIndex = 5;
+            this.label17.Text = "Niveau d\'eau";
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(571, 52);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.RowTemplate.Height = 24;
+            this.dataGridView3.Size = new System.Drawing.Size(437, 241);
+            this.dataGridView3.TabIndex = 4;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(571, 347);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(437, 241);
+            this.dataGridView2.TabIndex = 3;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(65, 347);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(437, 241);
+            this.dataGridView1.TabIndex = 2;
+            // 
             // chart1
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chart1.Legends.Add(legend5);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(25, 68);
             this.chart1.Name = "chart1";
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.chart1.Series.Add(series5);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(540, 263);
             this.chart1.TabIndex = 1;
             this.chart1.Text = "chart1";
@@ -178,6 +226,90 @@
             this.tabPage2.Text = "Réglage des paramètres";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.transferCycle);
+            this.panel3.Controls.Add(this.debutCycle);
+            this.panel3.Controls.Add(this.label18);
+            this.panel3.Controls.Add(this.label25);
+            this.panel3.Controls.Add(this.modifCycle);
+            this.panel3.Controls.Add(this.label32);
+            this.panel3.Location = new System.Drawing.Point(519, 136);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(294, 134);
+            this.panel3.TabIndex = 20;
+            // 
+            // transferCycle
+            // 
+            this.transferCycle.Enabled = false;
+            this.transferCycle.FormattingEnabled = true;
+            this.transferCycle.Items.AddRange(new object[] {
+            "Pompe ON",
+            "Pompe OFF",
+            "Vanne Ouverte",
+            "Vanne Fermée"});
+            this.transferCycle.Location = new System.Drawing.Point(153, 72);
+            this.transferCycle.Name = "transferCycle";
+            this.transferCycle.Size = new System.Drawing.Size(121, 24);
+            this.transferCycle.TabIndex = 19;
+            // 
+            // debutCycle
+            // 
+            this.debutCycle.Enabled = false;
+            this.debutCycle.FormattingEnabled = true;
+            this.debutCycle.Items.AddRange(new object[] {
+            "Ouverture Vanne",
+            "Fermeture Vanne",
+            "Démarrage Pompe",
+            "Arrêt Pompe"});
+            this.debutCycle.Location = new System.Drawing.Point(153, 40);
+            this.debutCycle.Name = "debutCycle";
+            this.debutCycle.Size = new System.Drawing.Size(121, 24);
+            this.debutCycle.TabIndex = 18;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.label18.Location = new System.Drawing.Point(9, 72);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(138, 20);
+            this.label18.TabIndex = 17;
+            this.label18.Text = "Transfert MySQL";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(103, 5);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(62, 24);
+            this.label25.TabIndex = 8;
+            this.label25.Text = "Cycle";
+            // 
+            // modifCycle
+            // 
+            this.modifCycle.AutoSize = true;
+            this.modifCycle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.modifCycle.Location = new System.Drawing.Point(210, 102);
+            this.modifCycle.Name = "modifCycle";
+            this.modifCycle.Size = new System.Drawing.Size(58, 17);
+            this.modifCycle.TabIndex = 7;
+            this.modifCycle.Text = "Modifier";
+            this.modifCycle.Click += new System.EventHandler(this.modifCycle_Click);
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.label32.Location = new System.Drawing.Point(9, 40);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(121, 20);
+            this.label32.TabIndex = 2;
+            this.label32.Text = "Début de cycle";
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Thistle;
@@ -194,6 +326,17 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(294, 134);
             this.panel4.TabIndex = 19;
+            // 
+            // modifFrequence
+            // 
+            this.modifFrequence.AutoSize = true;
+            this.modifFrequence.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.modifFrequence.Location = new System.Drawing.Point(210, 109);
+            this.modifFrequence.Name = "modifFrequence";
+            this.modifFrequence.Size = new System.Drawing.Size(58, 17);
+            this.modifFrequence.TabIndex = 20;
+            this.modifFrequence.Text = "Modifier";
+            this.modifFrequence.Click += new System.EventHandler(this.modifFrequence_Click);
             // 
             // label21
             // 
@@ -285,7 +428,7 @@
             this.panel2.Controls.Add(this.checkBox2);
             this.panel2.Controls.Add(this.checkBox1);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.modifNourriture);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.textBox4);
             this.panel2.Controls.Add(this.label10);
@@ -464,14 +607,16 @@
             this.label7.TabIndex = 8;
             this.label7.Text = "Nourriture";
             // 
-            // label8
+            // modifNourriture
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(153, 208);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(58, 17);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Modifier";
+            this.modifNourriture.AutoSize = true;
+            this.modifNourriture.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))));
+            this.modifNourriture.Location = new System.Drawing.Point(153, 208);
+            this.modifNourriture.Name = "modifNourriture";
+            this.modifNourriture.Size = new System.Drawing.Size(58, 17);
+            this.modifNourriture.TabIndex = 7;
+            this.modifNourriture.Text = "Modifier";
+            this.modifNourriture.Click += new System.EventHandler(this.label8_Click);
             // 
             // label9
             // 
@@ -526,6 +671,26 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(76, 27);
             this.textBox6.TabIndex = 0;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.label15.Location = new System.Drawing.Point(190, 271);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(16, 20);
+            this.label15.TabIndex = 26;
+            this.label15.Text = "°";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.label16.Location = new System.Drawing.Point(190, 305);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(16, 20);
+            this.label16.TabIndex = 27;
+            this.label16.Text = "°";
             // 
             // panel1
             // 
@@ -623,169 +788,6 @@
             this.tabPage3.Text = "Evènements";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(65, 347);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(437, 241);
-            this.dataGridView1.TabIndex = 2;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(571, 347);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(437, 241);
-            this.dataGridView2.TabIndex = 3;
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(571, 52);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(437, 241);
-            this.dataGridView3.TabIndex = 4;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.label15.Location = new System.Drawing.Point(190, 271);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(16, 20);
-            this.label15.TabIndex = 26;
-            this.label15.Text = "°";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.label16.Location = new System.Drawing.Point(190, 305);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(16, 20);
-            this.label16.TabIndex = 27;
-            this.label16.Text = "°";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.transferCycle);
-            this.panel3.Controls.Add(this.debutCycle);
-            this.panel3.Controls.Add(this.label18);
-            this.panel3.Controls.Add(this.label25);
-            this.panel3.Controls.Add(this.modifCycle);
-            this.panel3.Controls.Add(this.label32);
-            this.panel3.Location = new System.Drawing.Point(519, 136);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(294, 134);
-            this.panel3.TabIndex = 20;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.label18.Location = new System.Drawing.Point(9, 72);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(138, 20);
-            this.label18.TabIndex = 17;
-            this.label18.Text = "Transfert MySQL";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(103, 5);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(62, 24);
-            this.label25.TabIndex = 8;
-            this.label25.Text = "Cycle";
-            // 
-            // modifCycle
-            // 
-            this.modifCycle.AutoSize = true;
-            this.modifCycle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.modifCycle.Location = new System.Drawing.Point(210, 102);
-            this.modifCycle.Name = "modifCycle";
-            this.modifCycle.Size = new System.Drawing.Size(58, 17);
-            this.modifCycle.TabIndex = 7;
-            this.modifCycle.Text = "Modifier";
-            this.modifCycle.Click += new System.EventHandler(this.modifCycle_Click);
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.label32.Location = new System.Drawing.Point(9, 40);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(121, 20);
-            this.label32.TabIndex = 2;
-            this.label32.Text = "Début de cycle";
-            // 
-            // debutCycle
-            // 
-            this.debutCycle.Enabled = false;
-            this.debutCycle.FormattingEnabled = true;
-            this.debutCycle.Items.AddRange(new object[] {
-            "Ouverture Vanne",
-            "Fermeture Vanne",
-            "Démarrage Pompe",
-            "Arrêt Pompe"});
-            this.debutCycle.Location = new System.Drawing.Point(153, 40);
-            this.debutCycle.Name = "debutCycle";
-            this.debutCycle.Size = new System.Drawing.Size(121, 24);
-            this.debutCycle.TabIndex = 18;
-            // 
-            // transferCycle
-            // 
-            this.transferCycle.Enabled = false;
-            this.transferCycle.FormattingEnabled = true;
-            this.transferCycle.Items.AddRange(new object[] {
-            "Pompe ON",
-            "Pompe OFF",
-            "Vanne Ouverte",
-            "Vanne Fermée"});
-            this.transferCycle.Location = new System.Drawing.Point(153, 72);
-            this.transferCycle.Name = "transferCycle";
-            this.transferCycle.Size = new System.Drawing.Size(121, 24);
-            this.transferCycle.TabIndex = 19;
-            // 
-            // modifFrequence
-            // 
-            this.modifFrequence.AutoSize = true;
-            this.modifFrequence.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.modifFrequence.Location = new System.Drawing.Point(210, 109);
-            this.modifFrequence.Name = "modifFrequence";
-            this.modifFrequence.Size = new System.Drawing.Size(58, 17);
-            this.modifFrequence.TabIndex = 20;
-            this.modifFrequence.Text = "Modifier";
-            this.modifFrequence.Click += new System.EventHandler(this.modifFrequence_Click);
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(566, 24);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(138, 25);
-            this.label17.TabIndex = 5;
-            this.label17.Text = "Niveau d\'eau";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(571, 319);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(116, 25);
-            this.label19.TabIndex = 6;
-            this.label19.Text = "Luminosité";
-            this.label19.Click += new System.EventHandler(this.label19_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -797,19 +799,19 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.tabPage2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -833,7 +835,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label modifNourriture;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label10;
